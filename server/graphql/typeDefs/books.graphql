@@ -6,3 +6,12 @@ type Book {
 type Query {
   listBooks: [Book]
 }
+
+type Mutation {
+  addBook(addBookInput: addBookInput): Book
+}
+
+input addBookInput {
+  title: String
+  author: String
+}
